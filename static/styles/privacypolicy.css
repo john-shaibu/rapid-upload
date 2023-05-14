@@ -1,0 +1,39 @@
+/* @import 'static/styles/index.css'; */
+
+
+.privacy_statement{
+      padding: 4em 0;
+      /* background-color: red; */
+}
+.privacy_statement .container{
+      background-color: var(--white-color);
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: var(--double-shadow);
+      display: flex;
+      /* align-items: center; */
+      flex-direction: column;
+      gap: 1.5em;
+
+}
+.privacy_statement .container > h2{
+      font-size: 3em;
+      color: var(--black-color);
+}
+.privacy_statement .container > div{
+      display: flex;
+      gap: 0.875em;
+      flex-direction: column;
+
+}
+.privacy_statement .container > div > h4{
+      font-size: 1em;
+      color: var(--black-color);
+      font-weight: 600;
+}
+.privacy_statement .container > div > p{
+      font-size: 0.875em;
+      color: var(--black-color);
+      line-height: 200%;
+      /* font-weight: 600; */
+}

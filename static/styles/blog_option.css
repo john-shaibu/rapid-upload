@@ -1,0 +1,461 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); */
+
+:root{
+      --black-color: #212121;
+      --dark-color: #2b2e3d;
+      --blue-color: #5584ff;
+      --white-color: #ffffff;
+      --grey-color: #d6d8e7;
+      --semi-dark-color: #4c5168;
+
+      --normal-shadow: 0px 4px 40px rgba(85, 132, 225, 12%);
+      --double-shadow: 0px 4px 12px rgba(85, 132, 255, 15%), 0px 8px 24px 	rgb(85, 132, 255, 12%);
+}
+
+* {
+      margin: 0;
+      padding: 0;
+}
+*, ::before, ::after{
+      box-sizing: border-box;
+}
+body{
+      font-family: 'Poppins', sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      /* line-height: 1.4; */
+      color: var(--black-color);
+      background-color: #f1f1f1;
+
+}
+a {
+      text-decoration: none;
+      color: inherit;
+}
+ul {
+      list-style: none;
+}
+
+img {
+      max-width: 100%;
+      vertical-align: middle;
+}
+
+.container{
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 2em;
+      /* background-color: #111880; */
+}
+
+
+/* header section ======================== */
+
+header{
+      background-color: var(--white-color);
+      height: 75px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--grey-color);
+      box-shadow: var(--normal-shadow);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+}
+header :where(nav, .menu, .menu ul, .logo, .logo p, nav, .primary-nav){
+      display: flex;
+      align-items: center;
+}
+nav{
+      justify-content: space-between;
+}
+nav .logo a{
+      font-weight: 600;
+      margin-right: 2.5em;
+      color: var(--blue-color);
+}
+nav .logo a p{
+      gap: 0.5em;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3em;
+
+}
+.smallscreen{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(85, 132, 255, 10%);
+}
+.smallscreen i{
+      color: var(--blue-color);
+}
+.widesreen{
+      display: none;
+}
+.logo a{
+      font-weight: 600;
+      margin-right: 2.5em;
+      color: var(--white-color);
+}
+.logo a p{
+      gap: 0.5em;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3em;
+
+}
+
+.primary-nav{
+      flex-direction: row;
+      /* background-color: red; */
+}
+
+.primary-nav ul{
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5em;
+}
+ul li.uploads_left div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75em;
+      background-color: rgba(85, 132, 255, 10%);
+      border: 1px solid var(--blue-color);
+      height: 40px;
+      padding: 0 8px;
+      border-radius: 6px;
+      font-size: 0.875em;
+      font-weight: 500;
+      color: var(--dark-color);
+}
+ul li.uploads_left div i{
+      font-size: 1.2em;
+      color: var(--blue-color);
+}
+ul li.menu-opener {
+      height: 40px;
+      width: 40px;
+      /* border: 1px solid var(--blue-color); */
+      border-radius: 6px;
+      overflow: hidden;
+      object-fit: cover;
+      cursor: pointer;
+      position: relative;
+}
+ul li.menu-opener img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+}
+.menu-opener .user_menu{
+      background-color: rebeccapurple;
+      position: absolute;
+      z-index: 70;
+}
+ul li.notification{
+      width: 40px;
+      height: 40px;
+      /* background-color: red; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background-color: rgba(85, 132, 255, 10%);
+
+}
+ul li.notification i{
+      color: var(--blue-color);
+      font-size: 1.2em;
+}
+
+main{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.sites_container{
+      width: 100%;
+      max-width: 400px;
+      padding: 2em;
+      box-shadow: var(--double-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      border-radius: 12px;
+      background-color: var(--white-color);
+}
+.sites_container h2{
+      font-size: 1.1em;
+      color: var(--black-color);
+      text-align: center;
+}
+.sites_container .link-container{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+}
+.link-container .weblink button{
+      width: 100%;
+      height: 60px;
+      font-size: 1em;
+      font-family: 'poppins', sans-serif;
+      border-radius: 6px;
+      border: none;
+      box-shadow: var(--double-shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      cursor: pointer;
+      opacity: .9;
+      transition: opacity .3s;
+}
+.link-container .weblink button:hover{
+      opacity: 1;
+}
+.link-container .weblink:first-of-type button{
+      background-color: var(--blue-color);
+      color: var(--white-color);
+}
+.link-container .weblink:last-of-type button{
+      background-color: var(--semi-dark-color);
+      color: var(--white-color);
+}
+.link-container .weblink button i{
+      font-size: 1.5em;
+}
+.registration-process-container{
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 11;
+      box-shadow: var(--normal-shadow);
+}
+.registration-process {
+      background-color: var(--white-color);
+      border-radius: 6px;
+      padding: 1em;
+      align-items: center;
+      display: flex;
+      gap: 1.5em;
+      border: 1px solid var(--blue-color);
+}
+.registration-process > span{
+      border: 1px solid var(--blue-color);
+      padding: 6px;
+      background-color: rgba(85, 132, 255, 10%);
+      border-radius: 50%;
+      font-size: 0.875em;
+      font-weight: 500;
+}
+.registration-process >div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.registration-process  >div b{
+      font-size: 0.875em;
+      color: var(--dark-color);
+}
+.registration-process  .progress-line-container{
+      width: 100%;
+      background-color: var(--grey-color);
+      height: 6px;
+      border-radius: 8px;
+}
+.registration-process  .progress-line-container > .progress-line{
+      background-color: var(--blue-color);
+      border-radius: 4px;
+      height: 100%;
+      width: 40%;
+}
+.reg-details-trigger{
+      background-color: transparent;
+      padding: 8px;
+      border-radius: 6px;
+      transition: background-color .3s;
+}
+.reg-details-trigger:hover{
+      background-color: var(--grey-color);
+}
+
+.registration-details{
+      background-color: var(--white-color);
+      margin-top: 1em;
+      padding: 1em;
+      border-radius: 12px;
+      box-shadow: var(--double-shadow);
+      display: none;
+      animation: show-details .5s ease-in-out;
+      /* transition: display .3s; */
+}
+
+@keyframes show-details{
+      0%{
+            transform: translateY(40px);
+            opacity: 0;
+      }
+      1000%{
+            transform: translateY(0);
+            opacity: 1;
+      }
+}
+
+.show-reg-details  .registration-details{
+      display: block;
+}
+.show-reg-details .reg-details-trigger{
+      transform: rotate(180deg);
+      background-color: var(--grey-color);
+}
+.registration-details :where(ul, ul li, ul li div){
+      display: flex;
+      /* align-items: center; */
+}
+.registration-details ul{
+      flex-direction: column;
+      gap: 12px;
+}
+.registration-details ul li{
+      display: flex;
+      gap: 1em;
+}
+.registration-details ul li p{
+      background-color: var(--grey-color);
+      padding: 12px;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 4;
+}
+.registration-details ul li p::before{
+      content: '';
+      height: 40px;
+      width: 2px;
+      background-color: var(--grey-color);
+      position: absolute;
+      top: 35px;
+      z-index: 3;
+
+}
+.registration-details ul li div{
+      flex-direction: column;
+      gap: 0.5em;
+      margin-top: 0.5em;
+}
+.registration-details ul li div b{
+      font-size: 0.875em;
+      color: var(--black-color);
+}
+.registration-details ul li div span{
+      font-size: 0.75em;
+      color: #4c5168;
+}
+
+.registration-details ul li.action-done p{
+      background-color: var(--blue-color);
+      color: var(--white-color);
+}
+.registration-details ul li.action-done b{
+      color: var(--blue-color);
+}
+
+footer{
+      background-color: var(--dark-color);
+      padding: 4em 0 0 0;
+      border-top: 8px solid var(--semi-dark-color);
+}
+footer .grid{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+}
+footer .grid > div{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+}
+footer .grid > div > h4{
+      color: var(--white-color);
+      font-size: 1.1em;
+}
+footer .grid > div > ul{
+      /* color: var(--grey-color); */
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      font-size: 1em;
+}
+footer .grid > div > ul > li{
+      color: var(--grey-color);
+      transition: color .3s
+}
+footer .grid > div > ul > li:hover{
+      color: var(--blue-color)
+}
+footer .grid > div > p{
+      color: var(--grey-color);
+      line-height: 200%;
+      font-size: 1em;
+}
+footer .socials {
+      margin-top: 3em;
+      background-color: #4c5168;
+}
+.socials .container{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.5em;
+      justify-content: space-between;
+      padding: 1em;
+
+}
+.socials .container >p{
+      color: var(--white-color);
+
+}
+.socials .container > div {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      gap: 1em;
+}
+.socials .container > div > a {
+      font-size: 1.4em;
+      color: var(--white-color);
+      transition: color .3s;
+}
+.socials .container > div > a:hover{
+      color: var(--blue-color);
+}
+@media screen and (min-width: 992px){     
+      .smallscreen{
+            display: none;
+      }
+      .widesreen{
+            display: block;
+      }
+      footer .grid{
+            flex-direction: row;
+            justify-content: space-between;
+      }
+      footer .grid > div{
+            flex: 1 0 23%;
+            /* background-color: #212121; */
+      }
+      .socials .container{
+            flex-direction: row;
+      }
+}

@@ -1,0 +1,117 @@
+@import url(index.css);
+
+.about-hero{
+      background-color: var(--dark-color);
+      padding: 5em 0;
+}
+.about-hero .container{
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+}
+.about-hero .container div{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+}
+.about-hero .container div > h2{
+      font-size: 3em;
+      color: var(--white-color);
+}
+.about-hero .container div > h3{
+      font-size: 2em;
+}
+.about-hero .container div > p{
+      color: var(--grey-color);
+      font-size: 1em;
+      line-height: 200%;
+}
+
+.meet-the-team {
+      padding: 4em 0;
+      background-color: var(--white-color);
+}
+.meet-the-team .container{
+      max-width: 800px;
+}
+.team_grid{
+      /* background-color: red; */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 3em;
+      /* position: relative; */
+}
+.team_grid .grid__text{
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5em;
+}
+.team_grid > .grid__text::before{
+      content: '';
+      height: 6px;
+      width: 30px;
+      position: absolute;
+      background-color: #5584ff;
+      border-radius: 1em;
+      bottom: -30px;
+
+}
+.team_grid .grid__text h2{
+      font-size: 2em;
+      text-align: center;
+      color: var(--black-color);
+}
+.team_grid .grid__text p{
+      font-size: 1em;
+      text-align: center;
+      color: var(--black-color);
+}
+.team{
+      width: 100%;
+      /* background-color: rebeccapurple; */
+}
+.team-container{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      margin-top: 2em;
+}
+.team-container .teams{
+      box-shadow: var(--double-shadow);
+      border-radius: 1em;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+
+      /* gap: 1em; */
+      background-color: var(--white-color);
+}
+.teams .team-dp{
+      min-height: 200px;
+      max-height: 200px;
+      height: 100%;
+      object-fit: cover;
+}
+.team-dp img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+.teams div:last-of-type{
+      padding: 1em ;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1em;
+}
+@media screen and (min-width: 920px) {
+      .team-container{
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            gap: 2em;
+            margin-top: 2em;
+      }
+}

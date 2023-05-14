@@ -1,0 +1,105 @@
+
+
+.contact{
+      padding: 4em 0;
+}
+.contact .grid{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      /* background-color: royalblue; */
+}
+.contact .contact_header{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+}
+.contact .contact_header h2{
+      font-size: 2em;
+      color: var(--black-color);
+}
+.contact .contact_header p{
+      font-size: 1em;
+      color: var(--black-color);
+      line-height: 200%;
+}
+.contact .contact-form{
+      background-color: var(--white-color);
+      padding: 2em 3em;
+      box-shadow: var(--double-shadow);
+      border-radius: 1em;
+}
+.contact-form, .contact-form form{
+      display: flex;
+      flex-direction: column;
+}
+.contact-form{
+      gap: 1.5em;
+}
+.contact-form h2{
+      color: var(--black-color);
+      font-size: 1.5em;
+}
+.contact-form form{
+      /* background-color: red; */
+      gap: 1em;
+}
+.contact-form form > div{
+      display: flex;
+      flex-direction: column;
+      /* background-color: blue; */
+      gap: 1em;
+      
+}
+.contact-form form > div > div, .contact-form form > div:last-of-type{
+      display: flex;
+      flex-direction: column;
+      /* background-color: green; */
+      flex: 1 0 48%;
+      gap: 0.5em;
+}
+.contact-form form > div > div label, .contact-form form > div:last-of-type label{
+      font-size: 0.875em;
+      color: var(--black-color);
+}
+.contact-form form > div > div input{
+      height: 40px;
+      padding: 0 1em;
+      font-family: 'poppins', sans-serif;
+      border: 1px solid var(--grey-color);
+      border-radius: 8px;
+}
+.contact-form form > div > div > input:focus{
+      outline: 2px soild var(--black-color);
+}
+.contact-form form > div:last-of-type textarea{
+      height: 100px;
+      padding: 1em;
+      font-family: 'poppins', sans-serif;
+      border: 1px solid var(--grey-color);
+      border-radius: 8px;
+      outline: none;
+      resize: vertical;
+}
+.contact-form form > div:last-of-type textarea:focus{
+      outline: 2px soild var(--black-color);
+}
+form button{
+      width: 140px;
+      height: 40px;
+      background-color: var(--blue-color);
+      border-radius: 6px;
+      border: none;
+      color: var(--white-color);
+      font-family: 'poppins', sans-serif;
+      cursor: pointer;
+      box-shadow: var(--double-shadow);
+      margin-top: 1em;
+}
+@media screen and (min-width : 920px){
+      .contact-form form > div{
+            flex-direction: row;
+            gap: 2em;
+      }
+}

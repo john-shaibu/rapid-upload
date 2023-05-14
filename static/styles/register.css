@@ -1,0 +1,233 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); */
+
+:root{
+      --black-color: #212121;
+      --dark-color: #2b2e3d;
+      --blue-color: #5584ff;
+      --white-color: #ffffff;
+      --grey-color: #d6d8e7;
+
+      --normal-shadow: 0px 4px 40px rgba(85, 132, 225, 12%);
+      --double-shadow: 0px 4px 12px rgba(85, 132, 255, 15%), 0px 8px 24px 	rgb(85, 132, 255, 12%);
+}
+
+* {
+      margin: 0;
+      padding: 0;
+}
+*, ::before, ::after{
+      box-sizing: border-box;
+}
+body{
+      font-family: 'Poppins', sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      /* line-height: 1.4; */
+      color: var(--black-color);
+      background-color: #f1f1f1;
+
+}
+a {
+      text-decoration: none;
+      color: inherit;
+}
+ul {
+      list-style: none;
+}
+.logo a{
+      font-weight: 600;
+      /* margin-right: 2.5em; */
+      color: var(--blue-color);
+}
+.logo a p{
+      gap: 0.5em;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3em;
+
+}
+.container{
+      background-color: var(--dark-color);
+      min-width: 100%;
+      min-height: 100vh;
+}
+.container .left{
+      flex: 1 0 65%;
+      background-color: var(--white-color);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      display: none;
+      padding: 3em;
+}
+
+.container .left > div {
+      /* max-width: 600px; */
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      align-items: center;
+}
+.container .left div > .thumbnail{
+      /* background-color: rebeccapurple; */
+      width: 100%;
+      max-width: 500px;
+      height: 400px;
+      overflow: hidden;
+      object-fit: fill;
+}
+.left > div > div{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      align-items: center;
+}
+.left > div > div > h3{
+      color: var(--dark-color);
+      text-align: center;
+}
+.left > div > div > p{
+      color: var(--black-color);
+      text-align: center;
+}
+.container .right{
+      flex: 1 0 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3em;
+}
+.container .right .login-container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      /* background-color: rebeccapurple; */
+      align-items: center;
+}
+.login-container div:nth-of-type(2){
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5em;
+}
+.google-drive-link{
+      display: flex;
+      width: 100%;
+      /* background-color: rebeccapurple; */
+      align-items: center;
+      justify-content: center;
+}
+.google-drive-link a{
+      width: 100%;
+}
+.google-drive-link button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--blue-color);
+      height: 40px;
+      font-family: 'poppins', sans-serif;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      color: var(--white-color);
+      gap: 0.875em;
+      cursor: pointer;
+      font-weight: 500;
+      padding: 0 1em;
+}
+.google-drive-link button i{
+      font-size: 2em;
+}
+.login-container form{
+      /* background-color: red; */
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      width: 100%;
+
+}
+.login-container form div{
+      /* background-color: green; */
+      display: flex;
+      gap: 0.875em;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+}
+.login-container form div input{
+      width: 100%;
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid var(--grey-color);
+      background-color: transparent;
+      font-family: 'poppins', sans-serif;
+      padding: 0 1em;
+      color: var(--white-color);
+}
+.login-container form div input:focus{
+      outline: 2px solid var(--blue-color);
+}
+.login-container form div label{
+      color: var(--white-color);
+      font-size: 0.875em;
+}
+.login-container form button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--dark-color);
+      height: 40px;
+      font-family: 'poppins', sans-serif;
+      width: 100%;
+      border: 1px solid var(--blue-color);
+      border-radius: 8px;
+      color: var(--white-color);
+      gap: 0.875em;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color .3s;
+      margin-top: 1em;
+      display: none;
+}
+.login-container form button:hover{
+      background-color: var(--blue-color);
+}
+.login-container > p:last-of-type{
+      color: var(--grey-color);
+}
+.login-container > p:last-of-type > a{
+      color: var(--blue-color);
+      margin-left: 0.5em;
+      letter-spacing: 1px;
+}
+.register_header > h3{
+      font-size: 2em;
+      color: var(--white-color);
+      /* background-color: rebeccapurple; */
+}
+.register_header{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1em;
+}
+.register_header > p{
+      color: var(--grey-color);
+
+}
+@media screen and (min-width : 800px) {
+      .container{
+            background-color: var(--dark-color);
+            min-width: 100%;
+            min-height: 100vh;
+            /* max-height: 100vh; */
+            display: flex;
+      }
+      .container .left{
+            display: flex;
+      }
+}

@@ -1,0 +1,239 @@
+/* @import 'index.css'; */
+
+.pricing{
+      padding: 5em 0;
+}
+.pricing .pricing__grid{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5em;
+      /* background-color: red */
+}
+.pricing__grid .upper{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.5em;
+}
+.pricing__grid .upper > div{
+      background-color: var(--white-color);
+      padding: 6px;
+      border-radius: 8px;
+      /* min-width: 30px; */
+      display: flex;
+      gap: 0.5em;
+      box-shadow: var(--double-shadow);
+      border: 1px solid var(--grey-color)
+}
+.pricing__grid .upper > div button{
+      padding: 6px 16px;
+      background-color: var(--white-color);
+      border-radius: 4px;
+      min-width: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 0.875em;
+      font-weight: 600;
+      border: none;
+      font-family: poppins, sans-serif;
+      transition: background-color .3s;
+}
+.pricing__grid .upper > div button:hover{
+      background-color: var(--grey-color);
+}
+.pricing__grid .upper > div button.active{
+      background-color: var(--dark-color);
+      color: var(--white-color);
+}
+.pricing__grid .lower{
+      /* background-color: green; */
+      width: 100%;
+      max-width: 900px;
+}
+.pricing__grid .lower .prices-container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3em;
+      /* gap: 3em; */
+}
+.prices-container .plans{
+      background-color: var(--white-color);
+      /* width: 100%; */
+      border-radius: 12px;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      overflow: hidden;
+      box-shadow: var(--double-shadow);
+}
+.prices-container .plans.two{
+      /* flex: 1 0 40%; */
+      transform: scale(1.06, 1.06);
+      border: 1px solid var(--dark-color)
+      /* background-color: rebeccapurple; */
+}
+.prices-container .plans.two .price_header{
+      background-color: var(--dark-color);
+}
+.plans .price_header{
+      padding: 1em 2em; 
+      background-color: var(--semi-dark-color);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5em;
+}
+.plans .price_header > h4{
+      color: var(--white-color);
+}
+.plans .price_header > h2{
+      color: var(--white-color);
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
+      font-size: 1.8em;
+}
+.plans .price_header > h2  span{
+      font-size: 0.75em;
+      font-weight: 500;
+}
+.plans .price_details{
+      padding: 1em 2em; 
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      /* background-color: var(--dark-color); */
+}
+.price_details ul{
+      display: flex;
+      flex-direction: column;
+      gap: 0.875em;
+}
+.price_details ul li{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.875em;
+}
+.price_details ul li i{
+      font-size: 1.2em;
+}
+.price_details ul li i.ri-check-line{
+      color: #3bc171;
+}
+.price_details ul li i.ri-close-line{
+      color: #ff3050;
+}
+.price_details a > button{
+      width: 100%;
+      height: 40px;
+      border: 1px solid var(--semi-dark-color);
+      font-family: poppins, sans-serif;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1em;
+      background-color: transparent;
+      color: var(--dark-color);
+      font-weight: 500;
+}
+.prices-container .plans.two .price_details a > button{
+      background-color: var(--dark-color);
+      color: var(--white-color);
+      box-shadow: var(--double-shadow);
+      border: none;
+}
+/* .prices-container .plans.two .price_details a > button{
+
+} */
+
+
+.cta-buttons a button{
+      height: 40px;
+      min-width: 140px;
+      padding: 0 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--blue-color);
+      font-family: poppins, sans-serif;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1em;
+      cursor: pointer;
+}
+.cta-buttons a button:first-of-type{
+      background-color: var(--blue-color);
+      color: var(--white-color);
+      box-shadow: var(--double-shadow);
+}
+
+/*  */
+.faq{
+      padding: 5em 0;
+}
+.faq .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2em;
+
+}
+.faq .container  .faq_header h2{
+      color: var(--dark-color);
+      font-size: 2.5em;
+}
+.faq-container{
+      /* background-color: var(--grey-color); */
+      max-width: 700px;
+
+}
+.faq-wapper{
+      background-color: var(--white-color);
+      padding: 1em 3em;
+      border: 1px solid var(--grey-color);
+      margin-bottom: 1em;
+      border-radius: 6px
+}
+.toggle{
+      font-family: "poppins", sans-serif;
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1em;
+      border: none;
+      font-weight: 500;
+      color: var(--black-color);
+      outline: none;
+      cursor: pointer;
+      padding: 1em 0;
+}
+.faq-answer{
+      position: relative;
+      font-size: 0.875em;
+      text-align: justify;
+      line-height: 200%;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s;
+}
+
+@media screen and (min-width: 920px){
+      .pricing__grid .lower .prices-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1em;
+            /* gap: 3em; */
+      }
+}

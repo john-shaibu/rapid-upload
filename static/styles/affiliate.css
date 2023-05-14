@@ -1,0 +1,185 @@
+
+.affiliate-hero{
+      padding: 2em 0;
+      background-color: var(--dark-color);
+}
+
+.affiliate-hero .container .grid {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      flex-direction: column-reverse;
+}
+.affiliate-hero .container .grid > div{
+      flex: 1 0 50%;
+}
+.affiliate-hero .container .grid > .left{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+}
+.affiliate-hero .container .grid > .left h2{
+      font-size: 3em;
+      color: var(--white-color);
+}
+.affiliate-hero .container .grid > .left p{
+      font-size: 1.2em;
+      color: var(--grey-color);
+      line-height: 200%;
+}
+.affiliate-hero .container .grid > .left button{
+      min-width: 140px;
+      padding: 0 1em;
+      height: 40px;
+      border-radius: 8px;
+      color: var(--white-color);
+      border: none;
+      background-color: var(--blue-color);
+      font-family: 'poppins', sans-serif;
+      cursor: pointer;
+      box-shadow: var(--normal-shadow);
+}
+.how{
+      padding: 4em 0;
+      background-color: transparent;
+}
+.how .container .grid{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--white-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--double-shadow);
+}
+
+.how .container .grid .left > div{
+      background-color: black;
+      height: 100%;
+      min-height: 300px;
+      overflow: hidden;
+      object-fit: cover;
+}
+.how .container .grid .left > div img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+}
+.how .container .grid > .right{
+      display: flex;
+      flex-direction: column;
+      padding: 2em 3em;
+      /* background-color: aliceblue; */
+}
+.how .container .grid > .right > div{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+}
+.how .container .grid > .right > div > h2{
+      font-size: 2em;
+}
+.how .container .grid > .right > div > ul{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+}
+.how .container .grid > .right > div > ul > li{
+      display: flex;
+      /* flex-direction: column; */
+      gap: 1em;
+      align-items: center;
+      line-height: 200%;
+      gap: 1.5em;
+      font-size: 1em;
+      color: var(--black-color)
+}
+.how .container .grid > .right > div > ul > li > i{
+      font-size: 1.5em;
+      /* font-weight: 600; */
+      color: var(--grey-color);
+}
+.what{
+      padding: 4em 0;
+      background-color: transparent;
+}
+.what .container .grid{
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: var(--white-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--double-shadow);
+}
+
+.what .container .grid .right > div{
+      background-color: black;
+      height: 100%;
+      min-height: 300px;
+      overflow: hidden;
+      object-fit: cover;
+}
+.what .container .grid .right > div img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+}
+.what .container .grid > .left{
+      display: flex;
+      flex-direction: column;
+      padding: 2em 3em;
+      /* background-color: aliceblue; */
+}
+.what .container .grid > .left > div{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+}
+.what .container .grid > .left > div > h2{
+      font-size: 2em;
+}
+.what .container .grid > .left > div > ul{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+}
+.what .container .grid > .left > div > ul > li{
+      display: flex;
+      /* flex-direction: column; */
+      gap: 1em;
+      align-items: center;
+      line-height: 200%;
+      gap: 1.5em;
+      font-size: 1em;
+      color: var(--black-color)
+}
+.what .container .grid > .left > div > ul > li > i{
+      font-size: 1.5em;
+      /* font-weight: 600; */
+      color: var(--grey-color);
+}
+@media screen and (min-width: 920px) {
+      .affiliate-hero .container .grid{
+            flex-direction: row;
+      }
+      .how .container .grid{
+            flex-direction: row;
+      }
+      .what .container .grid{
+            flex-direction: row;
+      }
+      /* .how .container .grid > div{
+            flex: 1 0 50%;
+      } */
+      .how .container .grid > .right{
+            flex: 1 0 60%
+      }
+      .how .container .grid > .left{
+            flex: 1 0 40%
+      }
+      .what .container .grid > .left{
+            flex: 1 0 60%
+      }
+      .what .container .grid > .right{
+            flex: 1 0 40%
+      }
+}
